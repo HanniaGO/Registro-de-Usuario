@@ -104,7 +104,7 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/6.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'es'
 
 TIME_ZONE = 'UTC'
 
@@ -124,3 +124,8 @@ LOGIN_REDIRECT_URL = reverse_lazy('login')
 
 LOGOUT_URL = reverse_lazy('login')
 LOGOUT_REDIRECT_URL = reverse_lazy('login')
+
+# config/settings.py
+
+LOGIN_REDIRECT_URL = 'inicio'   # A donde va despues de loguearse
+LOGOUT_REDIRECT_URL = 'login'   # A donde va despues de cerrar sesion
